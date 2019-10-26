@@ -1858,6 +1858,23 @@ class bugModel extends model
         foreach($datas as $account => $data) if(isset($this->users[$account])) $data->name = $this->users[$account];
         return $datas;
     }
+    /**
+     * getDataOfBugsPerAssignedTo
+     *
+     * @access public
+     * @return void
+     */
+    public function getDataOfBugsPerCreateFrom()
+    {
+        $datas = $this->dao->select('createFrom AS name, COUNT(*) AS value')
+            ->from(TABLE_BUG)->where($this->reportCondition())
+            ->groupBy('name')
+            ->orderBy('value DESC')->fetchAll('name');
+        if(!$datas) return array();
+        if(!isset($this->users)) $this->users = $this->loadModel('user')->getPairs('noletter');
+        foreach($datas as $account => $data) if(isset($this->users[$account])) $data->name = $this->users[$account];
+        return $datas;
+    }
     
     /**
      * Merge the default chart settings and the settings of current chart.

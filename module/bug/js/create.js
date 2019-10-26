@@ -12,8 +12,16 @@ function loadAllUsers()
         moduleID  = $('#module').val();
         productID = $('#product').val();
         setAssignedTo(moduleID, productID);
-        setCreateFrom(moduleID, productID);
         $('#assignedTo').chosen(defaultChosenOptions);
+    });
+
+    link = createLink('bug', 'ajaxLoadAllUsers', 'selectedUser=' + $('#createFrom').val());
+    $('#createFromBox').load(link, function()
+    {
+        moduleID  = $('#module').val();
+        productID = $('#product').val();
+        setCreateFrom(moduleID, productID);
+        $('#createFrom').chosen(defaultChosenOptions);
     });
 
 }
@@ -29,6 +37,9 @@ function loadProjectTeamMembers(productID)
 {
     link = createLink('bug', 'ajaxLoadProjectTeamMembers', 'productID=' + productID + '&selectedUser=' + $('#assignedTo').val());
     $('#assignedToBox').load(link, function(){$('#assignedTo').chosen(defaultChosenOptions);});
+
+    link = createLink('bug', 'ajaxLoadProjectTeamMembers', 'productID=' + productID + '&selectedUser=' + $('#createFrom').val());
+    $('#createFromBox').load(link, function(){$('#createFrom').chosen(defaultChosenOptions);});
 }
 
 /**

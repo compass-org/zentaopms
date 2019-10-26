@@ -287,7 +287,7 @@ function loadProjectRelated(projectID)
         loadProjectStories(projectID);
         loadProjectBuilds(projectID);
         loadAssignedTo(projectID);
-//        loadCreateFrom(projectID);
+        loadCreateFrom(projectID);
     }
     else
     {
