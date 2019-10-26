@@ -282,6 +282,7 @@ $lang->bug->report->charts['bugsPerActivatedCount'] = 'Bug激活次數統計';
 $lang->bug->report->charts['bugsPerPri']            = 'Bug優先順序統計';
 $lang->bug->report->charts['bugsPerType']           = 'Bug類型統計';
 $lang->bug->report->charts['bugsPerAssignedTo']     = '指派給統計';
+$lang->bug->report->charts['bugsPerCreateFrom']     = 'Bug歸屬人統計';
 //$lang->bug->report->charts['bugLiveDays']        = 'Bug處理時間統計';
 //$lang->bug->report->charts['bugHistories']       = 'Bug處理步驟統計';
 
@@ -307,6 +308,7 @@ $lang->bug->report->bugsPerActivatedCount = new stdclass();
 $lang->bug->report->bugsPerType           = new stdclass();
 $lang->bug->report->bugsPerPri            = new stdclass();
 $lang->bug->report->bugsPerAssignedTo     = new stdclass();
+$lang->bug->report->bugsPerCreateFrom     = new stdclass();
 $lang->bug->report->bugLiveDays           = new stdclass();
 $lang->bug->report->bugHistories          = new stdclass();
 
@@ -326,6 +328,7 @@ $lang->bug->report->bugsPerActivatedCount->graph = new stdclass();
 $lang->bug->report->bugsPerType->graph           = new stdclass();
 $lang->bug->report->bugsPerPri->graph           = new stdclass();
 $lang->bug->report->bugsPerAssignedTo->graph     = new stdclass();
+$lang->bug->report->bugsPerCreateFrom->graph     = new stdclass();
 $lang->bug->report->bugLiveDays->graph           = new stdclass();
 $lang->bug->report->bugHistories->graph          = new stdclass();
 
@@ -353,6 +356,7 @@ $lang->bug->report->bugsPerActivatedCount->graph->xAxisName = '激活次數';
 $lang->bug->report->bugsPerPri->graph->xAxisName            = '優先順序';
 $lang->bug->report->bugsPerType->graph->xAxisName           = '類型';
 $lang->bug->report->bugsPerAssignedTo->graph->xAxisName     = '指派給';
+$lang->bug->report->bugsPerCreateFrom->graph->xAxisName     = 'Bug歸屬人';
 $lang->bug->report->bugLiveDays->graph->xAxisName           = '處理時間';
 $lang->bug->report->bugHistories->graph->xAxisName          = '處理步驟';
 

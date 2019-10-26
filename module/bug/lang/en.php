@@ -282,6 +282,7 @@ $lang->bug->report->charts['bugsPerActivatedCount'] = 'Bug Activation Report';
 $lang->bug->report->charts['bugsPerPri']            = 'Bug Priority Report';
 $lang->bug->report->charts['bugsPerType']           = 'Bug Type Report';
 $lang->bug->report->charts['bugsPerAssignedTo']     = 'Bug Assignment Report';
+$lang->bug->report->charts['bugsPerCreateFrom']     = 'Bug Create Report';
 //$lang->bug->report->charts['bugLiveDays']        = 'Bug Handling Time Report';
 //$lang->bug->report->charts['bugHistories']       = 'Bug Handling Steps Report';
 
@@ -307,6 +308,7 @@ $lang->bug->report->bugsPerActivatedCount = new stdclass();
 $lang->bug->report->bugsPerType           = new stdclass();
 $lang->bug->report->bugsPerPri            = new stdclass();
 $lang->bug->report->bugsPerAssignedTo     = new stdclass();
+$lang->bug->report->bugsPerCreateFrom     = new stdclass();
 $lang->bug->report->bugLiveDays           = new stdclass();
 $lang->bug->report->bugHistories          = new stdclass();
 
@@ -326,6 +328,7 @@ $lang->bug->report->bugsPerActivatedCount->graph = new stdclass();
 $lang->bug->report->bugsPerType->graph           = new stdclass();
 $lang->bug->report->bugsPerPri->graph            = new stdclass();
 $lang->bug->report->bugsPerAssignedTo->graph     = new stdclass();
+$lang->bug->report->bugsPerCreateFrom->graph     = new stdclass();
 $lang->bug->report->bugLiveDays->graph           = new stdclass();
 $lang->bug->report->bugHistories->graph          = new stdclass();
 
@@ -353,6 +356,7 @@ $lang->bug->report->bugsPerActivatedCount->graph->xAxisName = 'Activation Count'
 $lang->bug->report->bugsPerPri->graph->xAxisName            = 'Priority';
 $lang->bug->report->bugsPerType->graph->xAxisName           = 'Type';
 $lang->bug->report->bugsPerAssignedTo->graph->xAxisName     = 'Assigned To';
+$lang->bug->report->bugsPerCreateFrom->graph->xAxisName     = 'Create From';
 $lang->bug->report->bugLiveDays->graph->xAxisName           = 'Handling Time';
 $lang->bug->report->bugHistories->graph->xAxisName          = 'Handling Steps';
 
